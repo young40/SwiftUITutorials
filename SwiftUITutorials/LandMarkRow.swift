@@ -22,7 +22,16 @@ struct LandMarkRow: View {
 #if DEBUG
 struct LandMarkRow_Preview: PreviewProvider {
     static var previews: some View {
-        LandMarkRow(landmark: landmarkData[1])
+        Group {
+            LandMarkRow(landmark: landmarkData[1])
+                .previewLayout(.fixed(width: 300, height: 70))
+            
+            LandMarkRow(landmark: landmarkData[2])
+                .previewLayout(.fixed(width: 300, height: 70))
+            
+            LandMarkRow(landmark: landmarkData[3])
+                .previewLayout(.fixed(width: 300, height: 70))
+        }
     }
 }
 #endif
