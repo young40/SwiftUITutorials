@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D54135A222DCD41900D70106 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D54135A122DCD41900D70106 /* MapKit.framework */; };
 		D5FCE8E022DCB103005C4D9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5FCE8DF22DCB103005C4D9E /* AppDelegate.swift */; };
 		D5FCE8E222DCB103005C4D9E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5FCE8E122DCB103005C4D9E /* SceneDelegate.swift */; };
 		D5FCE8E422DCB103005C4D9E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5FCE8E322DCB103005C4D9E /* ContentView.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D54135A122DCD41900D70106 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		D5FCE8DC22DCB103005C4D9E /* SwiftUITutorials.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUITutorials.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5FCE8DF22DCB103005C4D9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D5FCE8E122DCB103005C4D9E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -35,17 +37,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D54135A222DCD41900D70106 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D54135A022DCD41900D70106 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D54135A122DCD41900D70106 /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D5FCE8D322DCB103005C4D9E = {
 			isa = PBXGroup;
 			children = (
 				D5FCE8DE22DCB103005C4D9E /* SwiftUITutorials */,
 				D5FCE8DD22DCB103005C4D9E /* Products */,
+				D54135A022DCD41900D70106 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,11 +76,11 @@
 				D5FCE8E122DCB103005C4D9E /* SceneDelegate.swift */,
 				D5FCE8E322DCB103005C4D9E /* ContentView.swift */,
 				D5FCE8F322DCB945005C4D9E /* CircleImage.swift */,
+				D5FCE8F522DCBC02005C4D9E /* MapView.swift */,
 				D5FCE8E522DCB105005C4D9E /* Assets.xcassets */,
 				D5FCE8EA22DCB105005C4D9E /* LaunchScreen.storyboard */,
 				D5FCE8ED22DCB105005C4D9E /* Info.plist */,
 				D5FCE8E722DCB105005C4D9E /* Preview Content */,
-				D5FCE8F522DCBC02005C4D9E /* MapView.swift */,
 			);
 			path = SwiftUITutorials;
 			sourceTree = "<group>";
