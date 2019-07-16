@@ -33,6 +33,7 @@
 		D5FCE8EC22DCB105005C4D9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5FCE8EA22DCB105005C4D9E /* LaunchScreen.storyboard */; };
 		D5FCE8F422DCB945005C4D9E /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5FCE8F322DCB945005C4D9E /* CircleImage.swift */; };
 		D5FCE8F622DCBC02005C4D9E /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5FCE8F522DCBC02005C4D9E /* MapView.swift */; };
+		D5FCE8F922DDF296005C4D9E /* charleyrivers.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D5FCE8F822DDF296005C4D9E /* charleyrivers.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +65,7 @@
 		D5FCE8ED22DCB105005C4D9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D5FCE8F322DCB945005C4D9E /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		D5FCE8F522DCBC02005C4D9E /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		D5FCE8F822DDF296005C4D9E /* charleyrivers.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = charleyrivers.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 		D5C41BAB22DCE0BE00415ABE /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D5FCE8F822DDF296005C4D9E /* charleyrivers.jpg */,
 				D5C41BCF22DCE2B800415ABE /* chilkoottrail.jpg */,
 				D5C41BCC22DCE2B700415ABE /* chincoteague.jpg */,
 				D5C41BD122DCE2B800415ABE /* hiddenlake.jpg */,
@@ -225,6 +228,7 @@
 				D5C41BD822DCE2B800415ABE /* silversalmoncreek.jpg in Resources */,
 				D5C41BD922DCE2B800415ABE /* chincoteague.jpg in Resources */,
 				D5C41BD322DCE2B800415ABE /* landmarkData.json in Resources */,
+				D5FCE8F922DDF296005C4D9E /* charleyrivers.jpg in Resources */,
 				D5C41BDC22DCE2B800415ABE /* chilkoottrail.jpg in Resources */,
 				D5FCE8E922DCB105005C4D9E /* Preview Assets.xcassets in Resources */,
 				D5C41BD722DCE2B800415ABE /* rainbowlake.jpg in Resources */,

@@ -15,6 +15,11 @@ struct LandMarkRow: View {
         HStack {
             landmark.image(forSize: 50)
             Text(landmark.name)
+            
+            if landmark.isFavorite {
+                Image(systemName: "star.fill")
+                    .imageScale(.medium)
+            }
         }
     }
 }
