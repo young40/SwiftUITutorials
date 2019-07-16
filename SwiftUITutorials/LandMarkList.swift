@@ -9,11 +9,15 @@
 import SwiftUI
 
 struct LandMarkList: View {
+    @State var showFavoritesOnly = true
+    
     var body: some View {
         NavigationView {
             List(landmarkData) { landmark in
-                NavigationLink(destination: LandmarkDetail(landmark: landmark)) {
-                    LandMarkRow(landmark: landmark)
+                if !self.showFavoritesOnly || landmark.isFavorite {
+                    NavigationLink(destination: LandmarkDetail(landmark: landmark)) {
+                        LandMarkRow(landmark: landmark)
+                    }
                 }
             }
             .navigationBarTitle(Text("LandMark"))
