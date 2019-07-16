@@ -16,6 +16,8 @@ struct LandMarkRow: View {
             landmark.image(forSize: 50)
             Text(landmark.name)
             
+            Spacer()
+            
             if landmark.isFavorite {
                 Image(systemName: "star.fill")
                     .imageScale(.medium)
