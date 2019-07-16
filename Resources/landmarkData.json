@@ -66,7 +66,7 @@
         "state": "Alaska",
         "id": 1005,
         "isFeatured": false,
-        "isFavorite": false,
+        "isFavorite": true,
         "park": "Lake Clark National Park and Preserve",
         "coordinates": {
             "longitude": -153.849883,
@@ -111,7 +111,7 @@
         "state": "Alaska",
         "id": 1008,
         "isFeatured": false,
-        "isFavorite": false,
+        "isFavorite": true,
         "park": "Wrangell-St. Elias National Park and Preserve",
         "coordinates": {
             "longitude": -141.518167,
