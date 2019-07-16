@@ -57,7 +57,7 @@ struct BadgeBackground : View {
 }
 
 #if DEBUG
-struct Badge_Previews : PreviewProvider {
+struct BadgeBackground_Previews : PreviewProvider {
     static var previews: some View {
         BadgeBackground()
     }
