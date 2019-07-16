@@ -35,6 +35,7 @@
 		D5FCE8F622DCBC02005C4D9E /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5FCE8F522DCBC02005C4D9E /* MapView.swift */; };
 		D5FCE8F922DDF296005C4D9E /* charleyrivers.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D5FCE8F822DDF296005C4D9E /* charleyrivers.jpg */; };
 		D5FCE8FB22DE008B005C4D9E /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5FCE8FA22DE008B005C4D9E /* UserData.swift */; };
+		D5FCE8FD22DE096F005C4D9E /* Badge.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5FCE8FC22DE096F005C4D9E /* Badge.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +69,7 @@
 		D5FCE8F522DCBC02005C4D9E /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		D5FCE8F822DDF296005C4D9E /* charleyrivers.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = charleyrivers.jpg; sourceTree = "<group>"; };
 		D5FCE8FA22DE008B005C4D9E /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		D5FCE8FC22DE096F005C4D9E /* Badge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Badge.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +152,7 @@
 				D5FCE8E322DCB103005C4D9E /* LandmarkDetail.swift */,
 				D5FCE8F322DCB945005C4D9E /* CircleImage.swift */,
 				D5FCE8F522DCBC02005C4D9E /* MapView.swift */,
+				D5FCE8FC22DE096F005C4D9E /* Badge.swift */,
 				D5FCE8E522DCB105005C4D9E /* Assets.xcassets */,
 				D5FCE8EA22DCB105005C4D9E /* LaunchScreen.storyboard */,
 				D5FCE8ED22DCB105005C4D9E /* Info.plist */,
@@ -253,6 +256,7 @@
 			files = (
 				D5C41BE222DCE30A00415ABE /* Data.swift in Sources */,
 				D5FCE8E022DCB103005C4D9E /* AppDelegate.swift in Sources */,
+				D5FCE8FD22DE096F005C4D9E /* Badge.swift in Sources */,
 				D5FCE8F422DCB945005C4D9E /* CircleImage.swift in Sources */,
 				D5C41BE322DCE30A00415ABE /* Landmark.swift in Sources */,
 				D5C41BE522DCE3E600415ABE /* LandMarkList.swift in Sources */,
