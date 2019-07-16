@@ -36,6 +36,7 @@
 		D5FCE8F922DDF296005C4D9E /* charleyrivers.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D5FCE8F822DDF296005C4D9E /* charleyrivers.jpg */; };
 		D5FCE8FB22DE008B005C4D9E /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5FCE8FA22DE008B005C4D9E /* UserData.swift */; };
 		D5FCE8FD22DE096F005C4D9E /* Badge.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5FCE8FC22DE096F005C4D9E /* Badge.swift */; };
+		D5FCE8FF22DE0B15005C4D9E /* HexagonParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5FCE8FE22DE0B15005C4D9E /* HexagonParameters.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +71,7 @@
 		D5FCE8F822DDF296005C4D9E /* charleyrivers.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = charleyrivers.jpg; sourceTree = "<group>"; };
 		D5FCE8FA22DE008B005C4D9E /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 		D5FCE8FC22DE096F005C4D9E /* Badge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Badge.swift; sourceTree = "<group>"; };
+		D5FCE8FE22DE0B15005C4D9E /* HexagonParameters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HexagonParameters.swift; path = SwiftUITutorials/HexagonParameters.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 				D5C41BE022DCE30A00415ABE /* Data.swift */,
 				D5C41BE122DCE30A00415ABE /* Landmark.swift */,
 				D5FCE8FA22DE008B005C4D9E /* UserData.swift */,
+				D5FCE8FE22DE0B15005C4D9E /* HexagonParameters.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -254,6 +257,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5FCE8FF22DE0B15005C4D9E /* HexagonParameters.swift in Sources */,
 				D5C41BE222DCE30A00415ABE /* Data.swift in Sources */,
 				D5FCE8E022DCB103005C4D9E /* AppDelegate.swift in Sources */,
 				D5FCE8FD22DE096F005C4D9E /* Badge.swift in Sources */,
