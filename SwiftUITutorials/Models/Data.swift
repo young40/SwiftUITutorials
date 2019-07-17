@@ -5,18 +5,20 @@ Abstract:
 Helpers for loading images and data.
 */
 
+import Foundation
+import CoreLocation
 import UIKit
 import SwiftUI
-import CoreLocation
 
 let landmarkData: [Landmark] = load("landmarkData.json")
+let hikeData: [Hike] = load("hikeData.json")
 
 func load<T: Decodable>(_ filename: String, as type: T.Type = T.self) -> T {
     let data: Data
     
     guard let file = Bundle.main.url(forResource: filename, withExtension: nil)
-        else {
-            fatalError("Couldn't find \(filename) in main bundle.")
+    else {
+        fatalError("Couldn't find \(filename) in main bundle.")
     }
     
     do {
@@ -36,7 +38,7 @@ func load<T: Decodable>(_ filename: String, as type: T.Type = T.self) -> T {
 final class ImageStore {
     fileprivate typealias _ImageDictionary = [String: [Int: CGImage]]
     fileprivate var images: _ImageDictionary = [:]
-    
+
     fileprivate static var originalSize = 250
     fileprivate static var scale = 2
     
@@ -51,7 +53,7 @@ final class ImageStore {
         
         return Image(sizedImage, scale: Length(ImageStore.scale), label: Text(verbatim: name))
     }
-    
+
     fileprivate func _guaranteeInitialImage(name: String) -> _ImageDictionary.Index {
         if let index = images.index(forKey: name) { return index }
         
@@ -59,8 +61,8 @@ final class ImageStore {
             let url = Bundle.main.url(forResource: name, withExtension: "jpg"),
             let imageSource = CGImageSourceCreateWithURL(url as NSURL, nil),
             let image = CGImageSourceCreateImageAtIndex(imageSource, 0, nil)
-            else {
-                fatalError("Couldn't load image \(name).jpg from main bundle.")
+        else {
+            fatalError("Couldn't load image \(name).jpg from main bundle.")
         }
         
         images[name] = [ImageStore.originalSize: image]
