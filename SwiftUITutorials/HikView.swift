@@ -43,6 +43,13 @@ struct HikView : View {
                 }
             }
             .padding()
+            
+            Spacer()
+            
+            if showDetail {
+                HikeDetail(hike: hike)
+                .padding()
+            }
         }
     }
 }
