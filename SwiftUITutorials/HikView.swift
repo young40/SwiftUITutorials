@@ -18,7 +18,7 @@ struct HikView : View {
                 HikeGraph(hike: hike, path: \.elevation)
                     .frame(width: 50, height: 30)
                 
-                VStack {
+                VStack(alignment: .leading) {
                     Text(hike.name)
                         .font(.headline)
                     
@@ -28,7 +28,7 @@ struct HikView : View {
                 Spacer()
                 
                 Button(action: {
-                    withAnimation {
+                    withAnimation(.basic(duration: 4)) {
                         self.showDetail.toggle()
                     }
                 }) {
@@ -42,9 +42,6 @@ struct HikView : View {
                     
                 }
             }
-            .padding()
-            
-            Spacer()
             
             if showDetail {
                 HikeDetail(hike: hike)
@@ -57,7 +54,13 @@ struct HikView : View {
 #if DEBUG
 struct HikView_Previews : PreviewProvider {
     static var previews: some View {
-        HikView(hike: hikeData[0])
+        VStack {
+            HikView(hike: hikeData[0])
+                .padding()
+            
+            Spacer()
+        }
+       
     }
 }
 #endif
