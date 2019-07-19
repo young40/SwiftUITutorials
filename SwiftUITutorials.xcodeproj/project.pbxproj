@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		D54135A222DCD41900D70106 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D54135A122DCD41900D70106 /* MapKit.framework */; };
 		D55C3F1F22E1EA1600581E0A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55C3F1E22E1EA1600581E0A /* HomeView.swift */; };
+		D55C3F2122E1EB9400581E0A /* CategoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55C3F2022E1EB9400581E0A /* CategoryRow.swift */; };
 		D5C41BAA22DCDE9300415ABE /* LandMarkRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C41BA922DCDE9300415ABE /* LandMarkRow.swift */; };
 		D5C41BD322DCE2B800415ABE /* landmarkData.json in Resources */ = {isa = PBXBuildFile; fileRef = D5C41BC622DCE2B600415ABE /* landmarkData.json */; };
 		D5C41BD422DCE2B800415ABE /* twinlake.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D5C41BC722DCE2B700415ABE /* twinlake.jpg */; };
@@ -52,6 +53,7 @@
 /* Begin PBXFileReference section */
 		D54135A122DCD41900D70106 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		D55C3F1E22E1EA1600581E0A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		D55C3F2022E1EB9400581E0A /* CategoryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRow.swift; sourceTree = "<group>"; };
 		D5C41BA922DCDE9300415ABE /* LandMarkRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandMarkRow.swift; sourceTree = "<group>"; };
 		D5C41BC622DCE2B600415ABE /* landmarkData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = landmarkData.json; sourceTree = "<group>"; };
 		D5C41BC722DCE2B700415ABE /* twinlake.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = twinlake.jpg; sourceTree = "<group>"; };
@@ -172,6 +174,7 @@
 				D5C41BA422DCDC8F00415ABE /* Models */,
 				D5FCE8DF22DCB103005C4D9E /* AppDelegate.swift */,
 				D5FCE8E122DCB103005C4D9E /* SceneDelegate.swift */,
+				D55C3F2022E1EB9400581E0A /* CategoryRow.swift */,
 				D55C3F1E22E1EA1600581E0A /* HomeView.swift */,
 				D5C41BE422DCE3E600415ABE /* LandMarkList.swift */,
 				D5C41BA922DCDE9300415ABE /* LandMarkRow.swift */,
@@ -288,6 +291,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D55C3F2122E1EB9400581E0A /* CategoryRow.swift in Sources */,
 				D5FCE8FF22DE0B15005C4D9E /* HexagonParameters.swift in Sources */,
 				D5C41BE222DCE30A00415ABE /* Data.swift in Sources */,
 				D5FCE8E022DCB103005C4D9E /* AppDelegate.swift in Sources */,
