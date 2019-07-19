@@ -17,6 +17,14 @@ struct ProfileHost: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 20) {
             HStack {
+                if self.mode?.value == .active {
+                    Button(action: {
+                        self.profile = self.draftProfile
+                        self.mode?.animation().value = .inactive
+                    }) {
+                        Text("Done")
+                    }
+                }
                 Spacer()
                 
                 EditButton()
@@ -25,7 +33,10 @@ struct ProfileHost: View {
             if self.mode?.value == .inactive {
                 ProfileSummary(profile: self.profile)
             } else {
-                Text("ttt")
+                ProfileEditor(profile: $draftProfile)
+                    .onDisappear {
+                        self.draftProfile = self.profile
+                }
             }
             
         }
