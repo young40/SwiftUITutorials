@@ -23,7 +23,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         if let windowScene = scene as? UIWindowScene {
             let window = UIWindow(windowScene: windowScene)
             window.rootViewController = UIHostingController(
-                rootView: HomeView()
+                rootView:
+                    HomeView()
+//                CategoryRow(categoryName: landmarkData[0].category.rawValue,
+//                                    items: Array(landmarkData.prefix(3)))
             )
             self.window = window
             window.makeKeyAndVisible()

@@ -13,7 +13,7 @@ struct CategoryRow: View {
     var items: [Landmark]
     
     var body: some View {
-        HStack(alignment: .top, spacing: 0) {
+        VStack(alignment: .leading) {
             Text(self.categoryName)
                 .font(.headline)
                 .padding(.leading, 15)
@@ -22,7 +22,11 @@ struct CategoryRow: View {
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(alignment: .top, spacing: 0) {
                     ForEach(self.items) { landmark in
-                        CategoryItem(landmark: landmark)
+                        NavigationLink(
+                            destination: LandmarkDetail(landmark: landmark)
+                        ) {
+                            CategoryItem(landmark: landmark)
+                        }
                     }
                 }
             }
@@ -37,11 +41,14 @@ struct CategoryItem: View {
     var body: some View {
         VStack(alignment: .leading) {
             landmark.image(forSize: 155)
+                .renderingMode(.original)
                 .cornerRadius(5)
             
             Text(landmark.name)
+                .foregroundColor(.primary)
                 .font(.caption)
         }
+        .padding(.leading, 15)
     }
 }
 

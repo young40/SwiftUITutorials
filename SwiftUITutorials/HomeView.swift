@@ -16,15 +16,34 @@ struct HomeView: View {
         )
     }
     
+    var featured: [Landmark] {
+        landmarkData.filter { $0.isFavorite }
+    }
+    
     var body: some View {
         NavigationView {
             List {
+                FeaturedLandmarks(landmarks: featured)
+                    .scaledToFill()
+                    .frame(height: 200)
+                    .clipped()
+                    .listRowInsets(EdgeInsets())
+                
                 ForEach(categories.keys.sorted(), id: \.self) {key in
-                    Text(key)
+                    CategoryRow(categoryName: key, items: self.categories[key]!)
                 }
+                .listRowInsets(EdgeInsets())
             }
             .navigationBarTitle("Featured")
         }
+    }
+}
+
+struct FeaturedLandmarks: View {
+    var landmarks: [Landmark]
+    
+    var body: some View {
+        landmarks[0].image(forSize: 250).resizable()
     }
 }
 
