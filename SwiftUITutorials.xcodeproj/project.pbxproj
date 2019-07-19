@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D54135A222DCD41900D70106 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D54135A122DCD41900D70106 /* MapKit.framework */; };
+		D55C3F1F22E1EA1600581E0A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55C3F1E22E1EA1600581E0A /* HomeView.swift */; };
 		D5C41BAA22DCDE9300415ABE /* LandMarkRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C41BA922DCDE9300415ABE /* LandMarkRow.swift */; };
 		D5C41BD322DCE2B800415ABE /* landmarkData.json in Resources */ = {isa = PBXBuildFile; fileRef = D5C41BC622DCE2B600415ABE /* landmarkData.json */; };
 		D5C41BD422DCE2B800415ABE /* twinlake.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D5C41BC722DCE2B700415ABE /* twinlake.jpg */; };
@@ -50,6 +51,7 @@
 
 /* Begin PBXFileReference section */
 		D54135A122DCD41900D70106 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		D55C3F1E22E1EA1600581E0A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		D5C41BA922DCDE9300415ABE /* LandMarkRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandMarkRow.swift; sourceTree = "<group>"; };
 		D5C41BC622DCE2B600415ABE /* landmarkData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = landmarkData.json; sourceTree = "<group>"; };
 		D5C41BC722DCE2B700415ABE /* twinlake.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = twinlake.jpg; sourceTree = "<group>"; };
@@ -170,6 +172,7 @@
 				D5C41BA422DCDC8F00415ABE /* Models */,
 				D5FCE8DF22DCB103005C4D9E /* AppDelegate.swift */,
 				D5FCE8E122DCB103005C4D9E /* SceneDelegate.swift */,
+				D55C3F1E22E1EA1600581E0A /* HomeView.swift */,
 				D5C41BE422DCE3E600415ABE /* LandMarkList.swift */,
 				D5C41BA922DCDE9300415ABE /* LandMarkRow.swift */,
 				D5FCE8E322DCB103005C4D9E /* LandmarkDetail.swift */,
@@ -300,6 +303,7 @@
 				D5FCE8F622DCBC02005C4D9E /* MapView.swift in Sources */,
 				D5FCE8E222DCB103005C4D9E /* SceneDelegate.swift in Sources */,
 				D5FCE8FB22DE008B005C4D9E /* UserData.swift in Sources */,
+				D55C3F1F22E1EA1600581E0A /* HomeView.swift in Sources */,
 				D5D56D8A22DF825A00966CFF /* GraphCapsule.swift in Sources */,
 				D5D56D7E22DE320100966CFF /* Badge.swift in Sources */,
 				D5FCE8E422DCB103005C4D9E /* LandmarkDetail.swift in Sources */,
