@@ -55,7 +55,7 @@ struct HomeView: View {
             .navigationBarTitle("Featured")
             .navigationBarItems(trailing: profileButton)
             .sheet(isPresented: $showingProfile) {
-                 Text("User Profile")
+                 ProfileHost()
             }
         }
     }
