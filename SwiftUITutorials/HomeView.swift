@@ -9,8 +9,22 @@
 import SwiftUI
 
 struct HomeView: View {
+    var categories: [String: [Landmark]] {
+        .init(
+            grouping: landmarkData,
+            by: {$0.category.rawValue}
+        )
+    }
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            List {
+                ForEach(categories.keys.sorted(), id: \.self) {key in
+                    Text(key)
+                }
+            }
+            .navigationBarTitle("Featured")
+        }
     }
 }
 
