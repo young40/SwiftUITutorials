@@ -46,7 +46,9 @@ struct HomeView: View {
                 }
                 .listRowInsets(EdgeInsets())
                 
-                NavigationLink(destination: LandMarkList()) {
+                NavigationLink(destination: LandMarkList()
+                    .environmentObject(UserData())
+                ) {
                     Text("See All")
                 }
             }
