@@ -20,6 +20,18 @@ struct HomeView: View {
         landmarkData.filter { $0.isFavorite }
     }
     
+    @State var showingProfile = false
+    
+    var profileButton: some View {
+        Button(action: {
+            self.showingProfile.toggle()
+        }) {
+            Image(systemName: "person.crop.circle")
+                .imageScale(.large)
+                .padding()
+        }
+    }
+    
     var body: some View {
         NavigationView {
             List {
@@ -33,8 +45,16 @@ struct HomeView: View {
                     CategoryRow(categoryName: key, items: self.categories[key]!)
                 }
                 .listRowInsets(EdgeInsets())
+                
+                NavigationLink(destination: LandMarkList()) {
+                    Text("See All")
+                }
             }
             .navigationBarTitle("Featured")
+            .navigationBarItems(trailing: profileButton)
+            .sheet(isPresented: $showingProfile) {
+                 Text("User Profile")
+            }
         }
     }
 }
