@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D54135A222DCD41900D70106 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D54135A122DCD41900D70106 /* MapKit.framework */; };
+		D5889CD922E3629700D8F782 /* PageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5889CD822E3629700D8F782 /* PageControl.swift */; };
 		D5BA6EF422E2957F00316AD4 /* charleyrivers.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D5BA6EE222E2957E00316AD4 /* charleyrivers.jpg */; };
 		D5BA6EF522E2957F00316AD4 /* silversalmoncreek.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D5BA6EE322E2957E00316AD4 /* silversalmoncreek.jpg */; };
 		D5BA6EF622E2957F00316AD4 /* lakemcdonald.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D5BA6EE422E2957E00316AD4 /* lakemcdonald.jpg */; };
@@ -84,6 +85,7 @@
 		D54135A122DCD41900D70106 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		D55C3F1E22E1EA1600581E0A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		D55C3F2022E1EB9400581E0A /* CategoryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRow.swift; sourceTree = "<group>"; };
+		D5889CD822E3629700D8F782 /* PageControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PageControl.swift; path = ../../../../../System/Volumes/Data/Users/young40/Work/Swift/SwiftUITutorials/PageControl.swift; sourceTree = "<group>"; };
 		D5BA6EDC22E229D600316AD4 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PageViewController.swift; path = ../../../../../../System/Volumes/Data/Users/young40/Work/Swift/SwiftUITutorials/SwiftUITutorials/PageViewController.swift; sourceTree = "<group>"; };
 		D5BA6EDE22E22BC500316AD4 /* PageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PageView.swift; path = ../../../../../../System/Volumes/Data/Users/young40/Work/Swift/SwiftUITutorials/SwiftUITutorials/PageView.swift; sourceTree = "<group>"; };
 		D5BA6EE022E292DA00316AD4 /* FeatureCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FeatureCard.swift; path = ../../../../../../System/Volumes/Data/Users/young40/Work/Swift/SwiftUITutorials/SwiftUITutorials/FeatureCard.swift; sourceTree = "<group>"; };
@@ -225,6 +227,7 @@
 		D5FCE8D322DCB103005C4D9E = {
 			isa = PBXGroup;
 			children = (
+				D5889CD822E3629700D8F782 /* PageControl.swift */,
 				D51AD56922E2172300CB87E2 /* ProfileHost.swift */,
 				D5FCE8DE22DCB103005C4D9E /* SwiftUITutorials */,
 				D5C41BAB22DCE0BE00415ABE /* Resources */,
@@ -416,6 +419,7 @@
 				D5ED939322E296FC0043FABC /* LandMarkRow.swift in Sources */,
 				D5ED939222E296FC0043FABC /* LandMarkList.swift in Sources */,
 				D5ED939122E296FC0043FABC /* FeatureCard.swift in Sources */,
+				D5889CD922E3629700D8F782 /* PageControl.swift in Sources */,
 				D5ED938A22E296FC0043FABC /* HomeView.swift in Sources */,
 				D5ED938322E296FC0043FABC /* UserData.swift in Sources */,
 				D5ED938222E296FC0043FABC /* Landmark.swift in Sources */,
